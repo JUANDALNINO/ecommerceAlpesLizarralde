@@ -1,11 +1,16 @@
 import '../stylesSheets/navBar.css';
+import logo from '../images/dark-logo.svg';
+import CarWidget from './CarWidget';
 
 function NavBar() {
     return (
         <div className="container navBarContainer">
             <header className="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
                 <a href="/" className="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
-                    <p>LOS ALPES SUIZOS</p>
+                <img 
+                    className='logo'
+                    src={logo}
+                    alt='logo'/>
                 </a>
 
                 <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
@@ -18,6 +23,11 @@ function NavBar() {
                 <div className="col-md-3 text-end">
                     <button type="button" className="btn btn-outline-primary me-2">Login</button>
                     <button type="button" className="btn btn-primary">Sign-up</button>
+                </div>
+
+                <div className='carContainer'>
+                    <CarWidget/>
+                    <p className='number'>5</p>
                 </div>
             </header>
         </div>
