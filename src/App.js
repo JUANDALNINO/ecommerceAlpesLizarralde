@@ -9,7 +9,7 @@ function App() {
       <br />
       <div className='Body'>
         <ItemListContainer 
-        greeting='Hello World!'/>
+        greeting='Product'/>
       </div>
     </div>
   );
