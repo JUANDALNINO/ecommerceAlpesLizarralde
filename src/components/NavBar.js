@@ -1,5 +1,4 @@
 import '../stylesSheets/navBar.css';
-import logo from '../images/dark-logo.svg';
 import CarWidget from './CarWidget';
 
 function NavBar() {
@@ -9,7 +8,7 @@ function NavBar() {
                 <a href="/" className="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
                 <img 
                     className='logo'
-                    src={logo}
+                    src="https://res.cloudinary.com/juandacloud/image/upload/v1662074760/reactJs-coder/dark-logo_umj92n.svg"
                     alt='logo'/>
                 </a>
 
