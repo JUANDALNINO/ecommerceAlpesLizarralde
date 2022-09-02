@@ -24,9 +24,9 @@ const ItemCount = ({ stock = 0, initial = 1, onAdd }) => {
     return (
         <div className='controls d-flex justify-content-between align-items-center'>
             <div className="btn-group">
-                <button type="button" class="btn btn-success" onClick={decrement}>-</button>
+                <button type="button" className="btn btn-success" onClick={decrement}>-</button>
                 <p className="card-text fs-6 text-count">{count}</p>
-                <button type="button" class="btn btn-success" onClick={increment}>+</button>
+                <button type="button" className="btn btn-success" onClick={increment}>+</button>
             </div>
             <a className="btn btn-outline-primary" onClick={() => onAdd(count)}>Add to cart</a>
         </div>

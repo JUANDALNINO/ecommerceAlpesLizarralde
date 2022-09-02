@@ -1,8 +1,7 @@
-
-import '../stylesSheets/ItemListContainer.css';
+import '../stylesSheets/ItemList.css';
 import ItemCount from './ItemCount';
 
-function ItemListContainer(props) {
+const ItemList = (props) => {
 
     const onAdd = (quantity) => {
         alert("You have selected " + quantity + " items.");
@@ -22,6 +21,6 @@ function ItemListContainer(props) {
             </div>
         </div>
     );
-}
+};
 
-export default ItemListContainer;
+export default ItemList;
