@@ -6,15 +6,19 @@ function ItemListContainer(props) {
 
     const onAdd = (quantity) => {
         alert("You have selected " + quantity + " items.");
-    }    
+    }
 
     return (
-        <div className="card">
-            <img src="https://res.cloudinary.com/juandacloud/image/upload/v1662074712/reactJs-coder/itemImage_rqy2dp.jpg" className="card-img-top" alt="..." />
-            <div className="card-body">
-                <h5 className="card-title">{props.greeting}</h5>
-
-                <ItemCount stock={7} initial={1} onAdd={onAdd}/>
+        <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div className="col">
+                <div className="card shadow-sm">
+                    <img src={props.imageProduct} className="card-img-top" alt="..." />
+                    <div className="card-body">
+                        <p className='card-text fs-3'>{props.title}</p>
+                        <p className="card-text">{props.description}</p>
+                        <ItemCount stock={7} initial={1} onAdd={onAdd} />
+                    </div>
+                </div>
             </div>
         </div>
     );
