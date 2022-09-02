@@ -4,12 +4,31 @@ import ItemListContainer from './components/ItemListContainer';
 
 const data = [
   {
-    title: "Essentials Oil",
+    title: "Essentials Oil 01",
+    imageProduct: "https://res.cloudinary.com/juandacloud/image/upload/v1662074712/reactJs-coder/itemImage_rqy2dp.jpg",
+    description: "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer."
+  },
+  {
+    title: "Essentials Oil 02",
+    imageProduct: "https://res.cloudinary.com/juandacloud/image/upload/v1662074712/reactJs-coder/itemImage_rqy2dp.jpg",
+    description: "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer."
+  },
+  {
+    title: "Essentials Oil 03",
+    imageProduct: "https://res.cloudinary.com/juandacloud/image/upload/v1662074712/reactJs-coder/itemImage_rqy2dp.jpg",
+    description: "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer."
+  },
+  {
+    title: "Essentials Oil 04",
+    imageProduct: "https://res.cloudinary.com/juandacloud/image/upload/v1662074712/reactJs-coder/itemImage_rqy2dp.jpg",
+    description: "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer."
+  },
+  {
+    title: "Essentials Oil 05",
     imageProduct: "https://res.cloudinary.com/juandacloud/image/upload/v1662074712/reactJs-coder/itemImage_rqy2dp.jpg",
     description: "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer."
   }
 ];
-
 
 
 function App() {
@@ -21,23 +40,16 @@ function App() {
       <div className='main'>
         <div className='album py-5'>
           <div className='container'>
-            <ItemListContainer
-              imageProduct={data[0].imageProduct}
-              title={data[0].title}
-              description={data[0].description}
-            />
 
-            <ItemListContainer
-              imageProduct={data[0].imageProduct}
-              title={data[0].title}
-              description={data[0].description}
-            />
-
-            <ItemListContainer
-              imageProduct={data[0].imageProduct}
-              title={data[0].title}
-              description={data[0].description}
-            />
+            {
+              data.map(item => (
+                <ItemListContainer
+                  imageProduct={item.imageProduct}
+                  title={item.title}
+                  description={item.description}
+                />
+              ))
+            }
 
           </div>
         </div>
